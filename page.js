@@ -6,6 +6,36 @@ let banks = document.getElementById('banks')
 let durations = document.getElementById('durations')
 let page1 = document.getElementById('page1')
 let page2 = document.getElementById('page2')
+
+
+let btn1 = document.getElementById('btn1');
+let fname = document.getElementById("name")
+let surname = document.getElementById("surname")
+let occupation = document.getElementById("occupation")
+let address = document.getElementById("address")
+let province = document.getElementById("state/province")
+let postal = document.getElementById("postal")
+let date = document.getElementById("date")
+let city = document.getElementById("city")
+let pick = document.getElementById("pick")
+let phone = document.getElementById("phone")
+let email = document.getElementById("email")
+let id = document.getElementById("reference")
+
+let amount = document.getElementById("amount")
+let duration = document.getElementById("duration")
+let account = document.getElementById("account");
+let bank = document.getElementById("banks");
+let income = document.getElementById("income")
+let yesNo = document.getElementById("yes/no");
+let error = document.getElementById("error-message")
+let error2 = document.getElementById("error-message2")
+let form = document.getElementById("contact-form")
+let agree = document.getElementById("agree")
+let achecked = agree.checked
+let count = 0;
+
+let money = 1000
 // let inputs = document.querySelectorAll('.input')
 // console.log(input)
 
@@ -72,6 +102,17 @@ option18.setAttribute("name", "duration");
 let opt18 = option18.getAttribute("name");
 console.log(opt15)
 
+setInterval(sex, 100)
+function sex(){
+    if(durations.value === "1 year"){
+        console.log("na me dey here")
+        money = 2000
+
+    }else{
+        console.log("here")
+    }
+}
+
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -129,42 +170,14 @@ function myFunction10(){
     console.log(opt10)
 }
 
-let btn1 = document.getElementById('btn1');
-let fname = document.getElementById("name")
-let surname = document.getElementById("surname")
-let occupation = document.getElementById("occupation")
-let address = document.getElementById("address")
-let province = document.getElementById("state/province")
-let postal = document.getElementById("postal")
-let date = document.getElementById("date")
-let city = document.getElementById("city")
-let pick = document.getElementById("pick")
-let phone = document.getElementById("phone")
-let email = document.getElementById("email")
-let id = document.getElementById("reference")
-
-let amount = document.getElementById("amount")
-let duration = document.getElementById("duration")
-let account = document.getElementById("account");
-let bank = document.getElementById("banks");
-let income = document.getElementById("income")
-let yesNo = document.getElementById("yes/no");
-let error = document.getElementById("error-message")
-let error2 = document.getElementById("error-message2")
-let form = document.getElementById("contact-form")
-let agree = document.getElementById("agree")
-let achecked = agree.checked
-let count = 0;
-
 function validate(){
     count ++
 
     if(count === 1){
-        alert(`According to our terms and conditions, 
-        A collateral deposit of the loan amount is required before we can proceed further. 
-        The collateral deposit serves as security for the loan and ensures a more favorable interest rate and repayment terms which stands as something to hold for future trust. A collateral deposit of $1000 is required before making any payment towards your account , This reduces the overall balance and helps you to pay off the loan faster.
-        This fees process takes up to 5 to 24 hours to be completed so as to make the refundable payment else please kkindly let your loan agent know as to when you are to make the deposit. 
-        
+        alert(`Announcement 
+        Note: This announcement is for clients who have low credit score, kindly be informed that clients with low credit score are required to boost their credit score to a higher level in other to be eligible for the loan amount they’re applying for. The company is willing to help boost each and everyone of you with low credit score, which is going to require a refundable fee of TTD$1000, please take note of this before agreeing to our terms and conditions, failure to do that will automatically result to loan cancellation.
+        This fee is refundable for clients who might change their mind after paying and would not want to continue with the application.
+       
         `)
     }else{
         alert("you didn't check it")
