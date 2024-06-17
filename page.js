@@ -6,7 +6,7 @@ let banks = document.getElementById('banks')
 let durations = document.getElementById('durations')
 let page1 = document.getElementById('page1')
 let page2 = document.getElementById('page2')
-
+let successful1 = document.getElementById('successful1')
 
 let btn1 = document.getElementById('btn1');
 let fname = document.getElementById("name")
@@ -128,9 +128,14 @@ window.onload = function() {
             subscribe.style.animationName = 'done';
             subscribe.value = 'DONE'
             form.style.display = 'none'
-            setTimeout(sub, 500);
+            setTimeout(sub, 400);
             function sub(){
                successful.style.display = "block"
+            }
+            setTimeout(hah, 800)
+            function hah(){
+                successful.style.display = "none"                              
+                successful1.style.display = "block"                              
             }
             setTimeout(vub, 700)
             function vub(){

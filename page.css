@@ -193,3 +193,8 @@ input[type='submit']{
     padding: 5%;
     border-radius: 15px;
   }
+  #successful1{
+    font-size: 80%;
+    text-align: center;
+    margin-top: 25%;
+  }
